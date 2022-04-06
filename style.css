@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-bar-container {
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar-title {
+    width: 70%;
+    text-align: left;
+}
+
+.nav-bar .tab {
+    width: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.nav-bar .tab:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-bar .tab a{
+    text-decoration: none;
+    color: black;
+}
+
+.homepage-main-img {
+    width: 100%;
+    height: auto;
+}
+
+.products-container {
+    width: 90%;
+    padding-left: 5%;
+}
+
+table {
+    border-spacing: 50px;
+}
+
+.product {
+    text-align: center;
+    width: 20%;
+    /* height: 600px; */
+    /* background-color: blue; */
+    margin: 100px;
+}
+
+/* .product {
+    z-index: 10;
+    transform: scale(1.2) rotate(0.001deg);
+} */
+
+.product-img-sizing {
+    width: 50%;
+    height: auto;
+    padding-bottom: 60px;
+}
+    /* z-index: 10;
+    transform: scale(1.4) rotate(0.001deg); */
+
+.product-img-sizing:hover {
+    z-index: 10;
+    transform: scale(1.4) rotate(0.001deg);
+}
+
+
+.product-description{
+    text-align: left;
+    width: 60%;
+    margin-left: 20%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 30px;
+    /* word-wrap: break-word; */
+}
+
+.product-name {
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+.product-type {
+    font-size: 20px;
+    color: grey;
+}
+
+.product-price {
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+.product-review {
+    font-size: 20px;
+    color: grey;
+}
