@@ -63,41 +63,6 @@ table {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .nav-bar-container {
-        background-color: brown;
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        display: flex;
-    }
-
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        list-style-type: none;
-    }
-    
-    .nav-bar-title {
-        text-align: left;
-    }
-    
-    .nav-bar .tab {
-        width: 40%;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 5px;
-    }
-    
-    .nav-bar .tab:hover {
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .nav-bar .tab a{
-        text-decoration: none;
-        color: black;
-    }
-
     .products-container{
         width: 100%;
         display: grid;
@@ -150,42 +115,6 @@ table {
 } 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .nav-bar-container {
-        background-color: rgb(128, 110, 110);
-        width: 100%;
-        /* padding-left: 10%; */
-        padding-top: 40px;
-        padding-bottom: 40px;
-        display: flex;
-    }
-
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        list-style-type: none;
-    }
-    
-    .nav-bar-title {
-        text-align: left;
-    }
-    
-    .nav-bar .tab {
-        width: 40%;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 5px;
-    }
-    
-    .nav-bar .tab:hover {
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .nav-bar .tab a{
-        text-decoration: none;
-        color: black;
-    }
-
     .products-container{
         width: 100%;
         display: grid;
@@ -245,42 +174,6 @@ table {
 } 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .nav-bar-container {
-        background-color: rgb(87, 6, 6);
-        width: 100%;
-        /* padding-left: 10%; */
-        padding-top: 40px;
-        padding-bottom: 40px;
-        display: flex;
-    }
-
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        list-style-type: none;
-    }
-    
-    .nav-bar-title {
-        text-align: left;
-    }
-    
-    .nav-bar .tab {
-        width: 40%;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 5px;
-    }
-    
-    .nav-bar .tab:hover {
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .nav-bar .tab a{
-        text-decoration: none;
-        color: black;
-    }
-
     .products-container{
         display: grid;
         grid-template-columns: 35% 35% 35%;
@@ -331,42 +224,6 @@ table {
 } 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .nav-bar-container {
-        background-color: rgb(56, 40, 40);
-        width: 100%;
-        /* padding-left: 10%; */
-        padding-top: 40px;
-        padding-bottom: 40px;
-        display: flex;
-    }
-
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        list-style-type: none;
-    }
-    
-    .nav-bar-title {
-        text-align: left;
-    }
-    
-    .nav-bar .tab {
-        width: 40%;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 5px;
-    }
-    
-    .nav-bar .tab:hover {
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .nav-bar .tab a{
-        text-decoration: none;
-        color: black;
-    }
-
     .products-container{
         display: grid;
         grid-template-columns: 35% 35% 35%;
@@ -418,41 +275,6 @@ table {
 } 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .nav-bar-container {
-        background-color: rgb(164, 10, 10);
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        display: flex;
-    }
-
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        list-style-type: none;
-    }
-    
-    .nav-bar-title {
-        text-align: left;
-    }
-    
-    .nav-bar .tab {
-        width: 40%;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 5px;
-    }
-    
-    .nav-bar .tab:hover {
-        font-weight: bold;
-        cursor: pointer;
-    }
-    
-    .nav-bar .tab a{
-        text-decoration: none;
-        color: black;
-    }
-
     .products-container{
         display: grid;
         grid-template-columns: 35% 35% 35%;

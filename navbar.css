@@ -1,0 +1,159 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav-bar-container {
+        width: 90%;
+        padding-left: 10%;
+        padding-top: 40px;
+        display: flex;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .nav-bar-title {
+        text-align: left;
+        font-size: 40px;
+        margin-left: -40px;
+    }
+    
+    .nav-bar .tab {
+        width: 60%;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    
+    .nav-bar .tab:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .nav-bar .tab a{
+        text-decoration: none;
+        color: black;
+    }    
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav-bar-container {
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 40px;
+        display: flex;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .nav-bar-title {
+        text-align: left;
+        font-size: 40px;
+        margin-left: -40px;
+        padding-right: 25%;
+    }
+    
+    .nav-bar .tab {
+        width: 20%;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    
+    .nav-bar .tab:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .nav-bar .tab a{
+        text-decoration: none;
+        color: black;
+    } 
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nav-bar-container {
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 40px;
+        display: flex;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .nav-bar-title {
+        text-align: left;
+        font-size: 50px;
+        margin-left: -40px;
+        padding-right: 40%;
+    }
+    
+    .nav-bar .tab {
+        width: 20%;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    
+    .nav-bar .tab:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .nav-bar .tab a{
+        text-decoration: none;
+        color: black;
+    } 
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .nav-bar-container {
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 40px;
+        display: flex;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .nav-bar-title {
+        text-align: left;
+        font-size: 50px;
+        margin-left: -40px;
+        padding-right: 50%;
+    }
+    
+    .nav-bar .tab {
+        width: 10%;
+        font-size: 24px;
+        text-align: center;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    
+    .nav-bar .tab:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .nav-bar .tab a{
+        text-decoration: none;
+        color: black;
+    } 
+}
