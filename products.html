@@ -5,13 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./products.css">
         <link rel="stylesheet" href="./navbar.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javaScript">
+            function handleProductSelect(id) {
+                alert("ID of clicked product: "+id);
+                var test = $('#'+id);
+                console.log("Test: ", test);
+                console.log("Test: ", test[0].lastElementChild);
+                console.log("Test: ", test[0].lastElementChild.textContent);
+            }
+        </script>
     </head>
     <body>
 
         <header>
             <div class="nav-bar-container">
                 <ul class="nav-bar">
-                    <li class="nav-bar-title">TITLE</li>
+                    <li class="nav-bar-title">Products</li>
                     <li class="tab"><a href="./index.html">Home</a></li>
                     <li class="tab"><a href="">Products</a></li>
                     <li class="tab"><a href="./team.html">The Team</a></li>
@@ -20,21 +31,23 @@
         </header>
 
         <div class="products-container">  
-            <div class="product">
-                <!-- <div class="product-img-container"> -->
-                    <img src="./images/university_blue_dunks.jpg" class="product-img" style="padding-top: 15%; padding-bottom: 5%;">
-                <!-- </div> -->
+            <div id="p1" class="product" onclick="handleProductSelect(this.id)">
+                <img src="./images/university_blue_dunks.jpg" class="product-img" style="padding-top: 15%; padding-bottom: 5%;">
                 <div class="product-description">
                     <div class="product-name">Dunk Low (University Blue)</div>
                     <div class="product-type">Nike</div>
                     <div class="product-price">$100</div>
                     <div class="product-review">35 reviews</div>
+                    <div class="product-hidden-desc">Originally created for the hardwood, the Dunk later took to the streets—and as they say, 
+                        the rest is history. More than 35 years after its debut, the silhouette still delivers bold, defiant style and remains 
+                        a coveted look for crews across both sport and culture. Now, the university-hoops OG returns, covered in crisp material 
+                        overlays with heritage-inspired colour-blocking. Modern footwear technology brings the design's comfort into the 21st 
+                        century, while a clean combination of white and University Blue gives this make-up a classic feel.
+                    </div>
                 </div>
             </div>
-            <div class="product">
-                <!-- <div class="product-img-container"> -->
-                    <img src="./images/white_af.jpg" class="product-img">
-                <!-- </div> -->
+            <div id="p2" class="product">
+                <img src="./images/white_af.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">Airforce (White)</div>
                     <div class="product-type">Nike</div>
@@ -42,7 +55,7 @@
                     <div class="product-review">103 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p3" class="product">
                 <img src="./images/AirMax95_teal.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">Air Max 95 (Sesame, Teal, Amethyst)</div>
@@ -51,7 +64,7 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p4" class="product">
                 <img src="./images/conv_oneStar.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">One Star (White & Black)</div>
@@ -60,7 +73,7 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p5" class="product">
                 <img src="./images/JScott_Forum.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">JEREMY SCOTT FORUM WINGS 1.0 MONEY (CLEAR BROWN & GREEN NIGHT)</div>
@@ -69,7 +82,7 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p6" class="product">
                 <img src="./images/Forum_Mid.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">Forum Mid (White & Royal Blue)</div>
@@ -78,7 +91,7 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p7" class="product">
                 <img src="./images/NB_MS327LF1.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">MS327LF1 (Black)</div>
@@ -87,7 +100,7 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p8" class="product">
                 <img src="./images/NB_ML574RO2.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">ML574RO2 (Nightwatch Green)</div>
@@ -96,7 +109,7 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-            <div class="product">
+            <div id="p9" class="product">
                 <img src="./images/conv_runStar.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">Run Star Hike (Black, White, Gum)</div>
@@ -105,103 +118,10 @@
                     <div class="product-review">35 reviews</div>
                 </div>
             </div>
-                  
-
-
-        <!-- <div class="products-container">  
-            <table>
-                <tr>
-                    <td class="product">
-                        <img src="./images/university_blue_dunks.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">Dunk Low (University Blue)</div>
-                            <div class="product-type">Nike</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                    <td class="product">
-                        <img src="./images/white_af.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">Airforce (White)</div>
-                            <div class="product-type">Nike</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">103 reviews</div>
-                        </div>
-                    </td>
-                    <td class="product">
-                        <img src="./images/AirMax95_teal.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">Air Max 95 (Sesame, Teal, Amethyst)</div>
-                            <div class="product-type">Nike</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="product">
-                        <img src="./images/conv_oneStar.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">One Star (White & Black)</div>
-                            <div class="product-type">Converse</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                    <td class="product">
-                        <img src="./images/JScott_Forum.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">JEREMY SCOTT FORUM WINGS 1.0 MONEY (CLEAR BROWN & GREEN NIGHT)</div>
-                            <div class="product-type">Adidas</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                    <td class="product">
-                        <img src="./images/Forum_Mid.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">Forum Mid (White & Royal Blue)</div>
-                            <div class="product-type">Adidas</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="product">
-                        <img src="./images/NB_MS327LF1.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">MS327LF1 (Black)</div>
-                            <div class="product-type">New Balance</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                    <td class="product">
-                        <img src="./images/NB_ML574RO2.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">ML574RO2 (Nightwatch Green)</div>
-                            <div class="product-type">New Balance</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                    <td class="product">
-                        <img src="./images/conv_runStar.jpg" class="product-img-sizing">
-                        <div class="product-description">
-                            <div class="product-name">Run Star Hike (Black, White, Gum)</div>
-                            <div class="product-type">Convers</div>
-                            <div class="product-price">$100</div>
-                            <div class="product-review">35 reviews</div>
-                        </div>
-                    </td>
-                </tr>
-            </table>       -->
         </div>
         
-        <footer>
+        <!-- <footer>
             Made with brains by: Katie Chow, Andrew Owyang, and Huan Nguyen
-        </footer>
+        </footer> -->
     </body>
 </html>
