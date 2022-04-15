@@ -13,7 +13,13 @@
                 var test = $('#'+id);
                 console.log("Test: ", test);
                 console.log("Test: ", test[0].lastElementChild);
-                console.log("Test: ", test[0].lastElementChild.textContent);
+                console.log("Test: ", test[0].lastElementChild.children);
+                // try to parse text into array 
+                let temp = [];
+                for (let i=0; i<5; i++) {
+                    temp.push(test[0].lastElementChild.children[i].textContent);
+                }
+                console.log(temp);
             }
         </script>
     </head>
@@ -38,11 +44,7 @@
                     <div class="product-type">Nike</div>
                     <div class="product-price">$100</div>
                     <div class="product-review">35 reviews</div>
-                    <div class="product-hidden-desc">Originally created for the hardwood, the Dunk later took to the streets—and as they say, 
-                        the rest is history. More than 35 years after its debut, the silhouette still delivers bold, defiant style and remains 
-                        a coveted look for crews across both sport and culture. Now, the university-hoops OG returns, covered in crisp material 
-                        overlays with heritage-inspired colour-blocking. Modern footwear technology brings the design's comfort into the 21st 
-                        century, while a clean combination of white and University Blue gives this make-up a classic feel.
+                    <div class="product-hidden-desc">Originally created for the hardwood, the Dunk later took to the streets—and as they say, the rest is history. More than 35 years after its debut, the silhouette still delivers bold, defiant style and remains a coveted look for crews across both sport and culture. Now, the university-hoops OG returns, covered in crisp material overlays with heritage-inspired colour-blocking. Modern footwear technology brings the design's comfort into the 21st century, while a clean combination of white and University Blue gives this make-up a classic feel.
                     </div>
                 </div>
             </div>
