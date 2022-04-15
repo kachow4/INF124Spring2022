@@ -5,7 +5,7 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* 
 .nav-bar-container {
     background-color: peru;
     width: 90%;
@@ -55,7 +55,7 @@ body {
 
 table {
     border-spacing: 50px;
-}
+} */
 
 /* [class*="col-"] {
     width: 100%;
@@ -284,7 +284,6 @@ table {
     .products-container{
         display: grid;
         grid-template-columns: 35% 35% 35%;
-        margin-left: -50px;
     }
 
     .product {
@@ -371,7 +370,6 @@ table {
     .products-container{
         display: grid;
         grid-template-columns: 35% 35% 35%;
-        margin-left: -50px;
     }
 
     .product {
@@ -458,7 +456,6 @@ table {
     .products-container{
         display: grid;
         grid-template-columns: 35% 35% 35%;
-        margin-left: -5%;
     }
 
     .product {
