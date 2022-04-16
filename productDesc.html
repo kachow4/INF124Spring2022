@@ -18,14 +18,18 @@
             </ul>
         </div>
     </header>
-    <script type="text/javaScript">
-        // document.write("\n"+localStorage["productDesc0"]+"\n");
-        // document.write("\n"+localStorage["productDesc1"]);
-        // document.write("\n"+localStorage["productDesc2"]);
-        // document.write("\n"+localStorage["productDesc3"]);
-        // document.write("\n"+localStorage["productDesc4"]);
 
+    <div id="test1"></div>
+    <div id="test2"></div>
+    <div id="test3"></div>
+    <div id="test4"></div>
+
+    <script type="text/javaScript">
         document.getElementById("navbar-title").innerHTML = localStorage["productDesc0"];
+        document.getElementById("test1").innerHTML = localStorage["productDesc1"];
+        document.getElementById("test2").innerHTML = localStorage["productDesc2"];
+        document.getElementById("test3").innerHTML = localStorage["productDesc3"];
+        document.getElementById("test4").innerHTML = localStorage["productDesc4"];
     </script>
 </body>
 </html>
