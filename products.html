@@ -9,7 +9,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type="text/javaScript">
             function handleProductSelect(id) {
-                alert("ID of clicked product: "+id);
+                // alert("ID of clicked product: "+id);
                 var test = $('#'+id);
                 console.log("Test: ", test);
                 console.log("Test: ", test[0].lastElementChild);
@@ -18,8 +18,13 @@
                 let temp = [];
                 for (let i=0; i<5; i++) {
                     temp.push(test[0].lastElementChild.children[i].textContent);
+                    localStorage["productDesc"+i] = test[0].lastElementChild.children[i].textContent;
                 }
                 console.log(temp);
+                location.href = "./productDesc.html";
+                // sessionStorage.setItem("productDesc", temp);
+                // const yuh = sessionStorage.getItem("productDesc");
+                // console.log(yuh[0]);
             }
         </script>
     </head>

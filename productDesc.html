@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script type="text/javaScript">
-        document.write ("JavaScript output\n");
-    </script>
-    
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Product Page</title>
 </head>
 <body>
-    
+    <header>
+        <div class="nav-bar-container">
+            <ul class="nav-bar">
+                <li id="navbar-title" class="nav-bar-title"></li>
+                <li class="tab"><a href="./index.html">Home</a></li>
+                <li class="tab"><a href="./products.html">Products</a></li>
+                <li class="tab"><a href="./team.html">The Team</a></li>
+            </ul>
+        </div>
+    </header>
+    <script type="text/javaScript">
+        // document.write("\n"+localStorage["productDesc0"]+"\n");
+        // document.write("\n"+localStorage["productDesc1"]);
+        // document.write("\n"+localStorage["productDesc2"]);
+        // document.write("\n"+localStorage["productDesc3"]);
+        // document.write("\n"+localStorage["productDesc4"]);
+
+        document.getElementById("navbar-title").innerHTML = localStorage["productDesc0"];
+    </script>
 </body>
 </html>
