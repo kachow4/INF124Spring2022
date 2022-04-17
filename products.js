@@ -17,6 +17,8 @@ function handleProductSelect(id) {
         localStorage["productImages" + i] = currentProductId[0].firstElementChild.children[i].src;
     }
 
+    console.log(productImages)
+
     console.log("Product Id: ", currentProductId);
     console.log("Product Description: ", currentProductId[0].lastElementChild);
     console.log("Product Description Elements: ", currentProductId[0].lastElementChild.children);

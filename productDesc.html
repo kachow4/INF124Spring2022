@@ -24,115 +24,128 @@
 
     <div class="content-container">
         
-        <div class="product-description">
-            <div id="product-name">HELLO</div>
-            <div id="brand"></div>
-            <div id="price"></div>
-        </div>
-        
-        <div class="product-img-container">
-            <img id="product-img0" alt="Product Image">
+        <div class="product-container">
+            <div class="top-product-description">
+                <div class="product-name"></div>
+                <div class="brand"></div>
+                <div class="price"></div>
+            </div>
+            
+            <div class="product-img-container">
+                <img id="product-img0" alt="Product Image">
 
-            <img id="product-img1">
-            <img id="product-img2">
-            <img id="product-img3">
+                <img id="product-img1">
+                <img id="product-img2">
+                <img id="product-img3">
+            </div>
+
+            <div class="side-product-description">
+                <div class="product-name"></div>
+                <div class="brand"></div>
+                <div class="price"></div>
+                <div class="reviews"></div>
+                <div class="description"></div>
+            </div>
+
         </div>
 
         <!-- product form -->
-        <form action id="cart-form" name="cartForm" onsubmit="formValidation()">
-            <h3>Your Cart</h3>
-            
-            <label for="product-identifier">Product Name</label>
-            <select id="quantity" name="quantity" required>
-                <option>Dunk Low</option>
-                <option>Air Force 1</option>
-                <option>Air Max 95</option>
-                <option>One Star</option>
-                <option>JEREMY SCOTT FORUM WINGS 1.0 MONEY</option>
-                <option>Forum Mid</option>
-                <option>MS327LF1</option>
-                <option>ML574RO2</option>
-                <option>Run Star Hike</option>
-            </select>
-
-            <label for="quantity">Quantity</label>
-            <select id="quantity" name="quantity" required>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-            </select>
-
-            <h3>Shipping Information</h3>
-            <div class="shipping-info">
-                <label for="first-name">First Name</label>
-                <input id="first-name" name="firstName" type="text"/>
+        <div class="form-container">
+            <form action id="cart-form" name="cartForm" onsubmit="formValidation()">
+                <h3>Your Cart</h3>
                 
-                <label for="last-name">Last Name</label>
-                <input id="last-name" name="lastName" type="text"/>
-                
-                <h4>Shipping Address</h4>
-                <div class="shipping-address">
-                    <label for="street-address">Street Address</label>
-                    <input id="street-address" name="streetAddress" type="text"/>
-                    
-                    <label for="city">City</label>
-                    <input id="city" name="city" type="text"/>
-                    
-                    <label for="state">State</label>
-                    <input id="state" name="state" type="text"/>
-                    
-                    <label for="zipcode">Zipcode</label>
-                    <input id="zipcode" name="zipcode" type="text"/>
-                </div>
-
-                <label for="shipping-speed">Shipping Speed</label>
-                <select id="shipping-speed" name="shipping-speed">
-                    <option>Overnight</option>
-                    <option>2-days Expedited</option>
-                    <option>6-days Ground</option>
+                <label for="product-identifier">Product Name</label>
+                <select id="product-identifier" name="product-identifier" required>
+                    <option>Dunk Low</option>
+                    <option>Air Force 1</option>
+                    <option>Air Max 95</option>
+                    <option>One Star</option>
+                    <option>JEREMY SCOTT FORUM WINGS 1.0 MONEY</option>
+                    <option>Forum Mid</option>
+                    <option>MS327LF1</option>
+                    <option>ML574RO2</option>
+                    <option>Run Star Hike</option>
                 </select>
 
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text"/>
-                
-                <label for="phone-number">Phone Number</label>
-                <input id="phone-number" name="phone-number" type="text"/>
-            </div>
+                <label for="quantity">Quantity</label>
+                <select id="quantity" name="quantity" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
 
-            <h3>Payment Information</h3>
-            <div class="credit-card-info">
-                <input type="radio" id="credit" name="payment-method" value="Credit">
-                <label for="credit">Credit</label>
-                
-                <input type="radio" id="debit" name="payment-method" value="Debit">
-                <label for="debit">Debit</label>
+                <h3>Shipping Information</h3>
+                <div class="shipping-info">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" name="firstName" type="text"/>
+                    
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" name="lastName" type="text"/>
+                    
+                    <h4>Shipping Address</h4>
+                    <div class="shipping-address">
+                        <label for="street-address">Street Address</label>
+                        <input id="street-address" name="streetAddress" type="text"/>
+                        
+                        <label for="city">City</label>
+                        <input id="city" name="city" type="text"/>
+                        
+                        <label for="state">State</label>
+                        <input id="state" name="state" type="text"/>
+                        
+                        <label for="zipcode">Zipcode</label>
+                        <input id="zipcode" name="zipcode" type="text"/>
+                    </div>
 
-                <label for="card-number">Card Number</label>
-                <input id="card-number" name="card-number" type="text"/>
+                    <label for="shipping-speed">Shipping Speed</label>
+                    <select id="shipping-speed" name="shipping-speed">
+                        <option>Overnight</option>
+                        <option>2-days Expedited</option>
+                        <option>6-days Ground</option>
+                    </select>
 
-                <label for="expiration-date">Expiration Date</label>
-                <input id="expiration-date" name="expiration-date" type="text"/>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text"/>
+                    
+                    <label for="phone-number">Phone Number</label>
+                    <input id="phone-number" name="phone-number" type="text"/>
+                </div>
 
-                <label for="security-code">Security Code</label>
-                <input id="security-code" name="security-code" type="text"/>
-            </div>
+                <h3>Payment Information</h3>
+                <div class="credit-card-info">
+                    <input type="radio" id="credit" name="payment-method" value="Credit">
+                    <label for="credit">Credit</label>
+                    
+                    <input type="radio" id="debit" name="payment-method" value="Debit">
+                    <label for="debit">Debit</label>
 
-            <input type="submit" value="Submit My Order"></button>
-        </form>
+                    <label for="card-number">Card Number</label>
+                    <input id="card-number" name="card-number" type="text"/>
+
+                    <label for="expiration-date">Expiration Date</label>
+                    <input id="expiration-date" name="expiration-date" type="text"/>
+
+                    <label for="security-code">Security Code</label>
+                    <input id="security-code" name="security-code" type="text"/>
+                </div>
+
+                <input type="submit" value="Submit My Order"></button>
+            </form>
+        </div>
 
         <div id="reviews"></div>
         <div id="description"></div>
     </div>
 
     <script type="text/javaScript">
-        document.getElementById("product-name").innerHTML = localStorage["productDesc0"];
+        document.getElementsByClassName("product-name")[0].innerHTML = localStorage["productDesc0"];
         
         document.getElementById("product-img0").src = localStorage["productImages0"]
         
@@ -140,10 +153,17 @@
         document.getElementById("product-img2").src = localStorage["productImages2"];
         document.getElementById("product-img3").src = localStorage["productImages3"];
 
-        document.getElementById("brand").innerHTML = localStorage["productDesc1"];
-        document.getElementById("price").innerHTML = localStorage["productDesc2"];
-        document.getElementById("reviews").innerHTML = localStorage["productDesc3"];
-        document.getElementById("description").innerHTML = localStorage["productDesc4"];
+        document.getElementsByClassName("brand")[0].innerHTML = localStorage["productDesc1"];
+        document.getElementsByClassName("price")[0].innerHTML = localStorage["productDesc2"];
+
+        document.getElementsByClassName("product-name")[1].innerHTML = localStorage["productDesc0"];
+        document.getElementsByClassName("brand")[1].innerHTML = localStorage["productDesc1"];
+        document.getElementsByClassName("price")[1].innerHTML = localStorage["productDesc2"];
+        document.getElementsByClassName("reviews")[0].innerHTML = localStorage["productDesc3"];
+        document.getElementsByClassName("description")[0].innerHTML = localStorage["productDesc4"];
+        // document.getElementsByClassName("reviews")[1].innerHTML = localStorage["productDesc3"];
+        // document.getElementsByClassName("description")[1].innerHTML = localStorage["productDesc4"];
+        // document.getElementById("side-reviews").innerHTML = localStorage["productDesc3"];
     </script>
 </body>
 </html>

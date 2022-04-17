@@ -7,35 +7,38 @@ body {
 }
 
 /* GLOBAL CSS */
+.product-name {
+    font-size: 24px;
+}
+
+.brand {
+    font-size: 18px;
+}
+
+.price {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.description {
+    padding-top: 20px;
+}
+
+label, input {
+    display: block;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* body {
-        background-color: red;
-    } */
-
-    .page-container {
-        width: 100%;
-    }
-
-    .product-description{
+    .top-product-description{
         /* border: 1px solid black; */
         border-top: 1px solid gainsboro;
         padding-top: 40px;
         padding-left: 20px;
     }
 
-    #product-name {
-        font-size: 24px;
-    }
-
-    #brand {
-        font-size: 18px;
-    }
-
-    #price {
-        padding-top: 20px;
-        font-size: 18px;
+    .side-product-description {
+        display: none;
     }
 
     #product-img0 {
@@ -50,41 +53,22 @@ body {
     #reviews {
         border: 1px solid black;
     }
-
-    label, input {
-        display: block;
-    }
-
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    /* body {
-        background-color: orange;
-    } */
-
     .page-container {
         width: 100%;
     }
 
-    .product-description{
-        /* border: 1px solid black; */
+    .top-product-description{
         border-top: 1px solid gainsboro;
         padding-top: 40px;
         padding-left: 20px;
     }
 
-    #product-name {
-        font-size: 24px;
-    }
-
-    #brand {
-        font-size: 18px;
-    }
-
-    #price {
-        padding-top: 20px;
-        font-size: 18px;
+    .side-product-description {
+        display: none;
     }
 
     #product-img0 {
@@ -98,75 +82,43 @@ body {
 
     #reviews {
         border: 1px solid black;
-    }
-
-    label, input {
-        display: block;
     }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    /* body {
-        background-color:yellow;
-    } */
-
     .page-container {
         width: 100%;
     }
 
-    .product-description{
-        /* border: 1px solid black; */
+    .top-product-description{
         border-top: 1px solid gainsboro;
         padding-top: 40px;
         padding-left: 20px;
     }
 
-    #product-name {
-        font-size: 24px;
-    }
-
-    #brand {
-        font-size: 18px;
-    }
-
-    #price {
-        padding-top: 20px;
-        font-size: 18px;
-    }
-
-    .product-img-container{
-        width: 100%;
-        text-align: center;
-    }
-
-    #product-img0 {
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-    }
-
-    #product-img1, #product-img2, #product-img3 {
+    .side-product-description{
         display: none;
     }
 
-    #reviews {
-        border: 1px solid black;
+    .product-img-container{
+        width: 90%;
+        display: flexbox;
+        margin-left: 10%;
     }
-
-    label, input {
-        display: block;
+    
+    #product-img0, #product-img1, #product-img2, #product-img3 {
+        width: 45%;
+        height: auto;
+        padding: 20px;
     }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body {
-        background-color: green;
+    .product-container{
+        display: flex;
     }
-    /* .content-container{
-
-    } */
 
     .product-img-container{
         width: 70%;
@@ -174,16 +126,54 @@ body {
 
         padding-left: 5%;
     }
+
+    .product-img-container {
+        border-right: 2px solid rgb(213, 213, 213);
+    }
     
     #product-img0, #product-img1, #product-img2, #product-img3 {
         width: 45%;
         height: auto;
     }
+
+    .top-product-description{
+        display: none;
+    }
+
+    .side-product-description{
+        width: 20%;
+        padding-left: 20px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    body {
-        background-color: blue;
+    .product-container{
+        display: flex;
+    }
+
+    .product-img-container{
+        width: 70%;
+        display: flexbox;
+
+        padding-left: 5%;
+    }
+
+    .product-img-container {
+        border-right: 2px solid rgb(213, 213, 213);
+    }
+    
+    #product-img0, #product-img1, #product-img2, #product-img3 {
+        width: 45%;
+        height: auto;
+    }
+
+    .top-product-description{
+        display: none;
+    }
+
+    .side-product-description{
+        width: 20%;
+        padding-left: 20px;
     }
 }
