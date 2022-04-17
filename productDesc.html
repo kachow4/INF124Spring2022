@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./productDesc.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./productDesc.js"></script>
+
     <title>Product Page</title>
 </head>
 <body>
     <header>
         <div class="nav-bar-container">
             <ul class="nav-bar">
-                <li id="navbar-title" class="nav-bar-title"></li>
+                <li id="navbar-title" class="nav-bar-title">TITLE</li>
                 <li class="tab"><a href="./index.html">Home</a></li>
                 <li class="tab"><a href="./products.html">Products</a></li>
                 <li class="tab"><a href="./team.html">The Team</a></li>
@@ -19,17 +22,128 @@
         </div>
     </header>
 
-    <div id="test1"></div>
-    <div id="test2"></div>
-    <div id="test3"></div>
-    <div id="test4"></div>
+    <div class="content-container">
+        
+        <div class="product-description">
+            <div id="product-name">HELLO</div>
+            <div id="brand"></div>
+            <div id="price"></div>
+        </div>
+        
+        <div class="product-img-container">
+            <img id="product-img0" alt="Product Image">
+
+            <img id="product-img1">
+            <img id="product-img2">
+            <img id="product-img3">
+        </div>
+
+        <!-- product form -->
+        <form action id="cart-form" name="cartForm" onsubmit="formValidation()">
+            <h3>Your Cart</h3>
+            
+            <label for="product-identifier">Product Name</label>
+            <select id="quantity" name="quantity" required>
+                <option>Dunk Low</option>
+                <option>Air Force 1</option>
+                <option>Air Max 95</option>
+                <option>One Star</option>
+                <option>JEREMY SCOTT FORUM WINGS 1.0 MONEY</option>
+                <option>Forum Mid</option>
+                <option>MS327LF1</option>
+                <option>ML574RO2</option>
+                <option>Run Star Hike</option>
+            </select>
+
+            <label for="quantity">Quantity</label>
+            <select id="quantity" name="quantity" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+
+            <h3>Shipping Information</h3>
+            <div class="shipping-info">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="firstName" type="text"/>
+                
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="lastName" type="text"/>
+                
+                <h4>Shipping Address</h4>
+                <div class="shipping-address">
+                    <label for="street-address">Street Address</label>
+                    <input id="street-address" name="streetAddress" type="text"/>
+                    
+                    <label for="city">City</label>
+                    <input id="city" name="city" type="text"/>
+                    
+                    <label for="state">State</label>
+                    <input id="state" name="state" type="text"/>
+                    
+                    <label for="zipcode">Zipcode</label>
+                    <input id="zipcode" name="zipcode" type="text"/>
+                </div>
+
+                <label for="shipping-speed">Shipping Speed</label>
+                <select id="shipping-speed" name="shipping-speed">
+                    <option>Overnight</option>
+                    <option>2-days Expedited</option>
+                    <option>6-days Ground</option>
+                </select>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text"/>
+                
+                <label for="phone-number">Phone Number</label>
+                <input id="phone-number" name="phone-number" type="text"/>
+            </div>
+
+            <h3>Payment Information</h3>
+            <div class="credit-card-info">
+                <input type="radio" id="credit" name="payment-method" value="Credit">
+                <label for="credit">Credit</label>
+                
+                <input type="radio" id="debit" name="payment-method" value="Debit">
+                <label for="debit">Debit</label>
+
+                <label for="card-number">Card Number</label>
+                <input id="card-number" name="card-number" type="text"/>
+
+                <label for="expiration-date">Expiration Date</label>
+                <input id="expiration-date" name="expiration-date" type="text"/>
+
+                <label for="security-code">Security Code</label>
+                <input id="security-code" name="security-code" type="text"/>
+            </div>
+
+            <input type="submit" value="Submit My Order"></button>
+        </form>
+
+        <div id="reviews"></div>
+        <div id="description"></div>
+    </div>
 
     <script type="text/javaScript">
-        document.getElementById("navbar-title").innerHTML = localStorage["productDesc0"];
-        document.getElementById("test1").innerHTML = localStorage["productDesc1"];
-        document.getElementById("test2").innerHTML = localStorage["productDesc2"];
-        document.getElementById("test3").innerHTML = localStorage["productDesc3"];
-        document.getElementById("test4").innerHTML = localStorage["productDesc4"];
+        document.getElementById("product-name").innerHTML = localStorage["productDesc0"];
+        
+        document.getElementById("product-img0").src = localStorage["productImages0"]
+        
+        document.getElementById("product-img1").src = localStorage["productImages1"];
+        document.getElementById("product-img2").src = localStorage["productImages2"];
+        document.getElementById("product-img3").src = localStorage["productImages3"];
+
+        document.getElementById("brand").innerHTML = localStorage["productDesc1"];
+        document.getElementById("price").innerHTML = localStorage["productDesc2"];
+        document.getElementById("reviews").innerHTML = localStorage["productDesc3"];
+        document.getElementById("description").innerHTML = localStorage["productDesc4"];
     </script>
 </body>
 </html>

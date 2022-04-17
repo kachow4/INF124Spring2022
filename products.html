@@ -7,26 +7,7 @@
         <link rel="stylesheet" href="./navbar.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script type="text/javaScript">
-            function handleProductSelect(id) {
-                // alert("ID of clicked product: "+id);
-                var test = $('#'+id);
-                console.log("Test: ", test);
-                console.log("Test: ", test[0].lastElementChild);
-                console.log("Test: ", test[0].lastElementChild.children);
-                // try to parse text into array 
-                let temp = [];
-                for (let i=0; i<5; i++) {
-                    temp.push(test[0].lastElementChild.children[i].textContent);
-                    localStorage["productDesc"+i] = test[0].lastElementChild.children[i].textContent;
-                }
-                console.log(temp);
-                location.href = "./productDesc.html";
-                // sessionStorage.setItem("productDesc", temp);
-                // const yuh = sessionStorage.getItem("productDesc");
-                // console.log(yuh[0]);
-            }
-        </script>
+        <script src="./products.js"></script>
     </head>
     <body>
 
@@ -43,7 +24,13 @@
 
         <div class="products-container">  
             <div id="p1" class="product" onclick="handleProductSelect(this.id)">
-                <img src="./images/university_blue_dunks.jpg" class="product-img" style="padding-top: 15%; padding-bottom: 5%;">
+                <!-- <img src="./images/p1/university_blue_dunks.jpg" class="product-img" style="padding-top: 15%; padding-bottom: 5%;"> -->
+                <div class="product-imgs">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_2_1.jpg" class="product-img">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_3_1.jpg" class="additional-product-img">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_1_1.jpg" class="additional-product-img">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_5_1.jpg" class="additional-product-img">
+                </div>
                 <div class="product-description">
                     <div class="product-name">Dunk Low (University Blue)</div>
                     <div class="product-type">Nike</div>
@@ -53,22 +40,32 @@
                     </div>
                 </div>
             </div>
-            <div id="p2" class="product">
-                <img src="./images/white_af.jpg" class="product-img">
+            <div id="p2" class="product" onclick="handleProductSelect(this.id)">
+                <!-- <img src="./images/white_af.jpg" class="product-img"> -->
+                <div class="product-imgs">
+                    <img src="./images/white_af.jpg" class="product-img">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_3_1.jpg" class="additional-product-img">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_1_1.jpg" class="additional-product-img">
+                    <img src="https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/1/8/18-06-2021_LL_DD1391-102_5_1.jpg" class="additional-product-img">
+                </div>
                 <div class="product-description">
-                    <div class="product-name">Airforce (White)</div>
+                    <div class="product-name">Air Force 1 (White)</div>
                     <div class="product-type">Nike</div>
                     <div class="product-price">$100</div>
                     <div class="product-review">103 reviews</div>
+                    <div class="product-hidden-desc">Originally created for the hardwood, the Dunk later took to the streets—and as they say, the rest is history. More than 35 years after its debut, the silhouette still delivers bold, defiant style and remains a coveted look for crews across both sport and culture. Now, the university-hoops OG returns, covered in crisp material overlays with heritage-inspired colour-blocking. Modern footwear technology brings the design's comfort into the 21st century, while a clean combination of white and University Blue gives this make-up a classic feel.
+                    </div>
                 </div>
             </div>
-            <div id="p3" class="product">
+            <div id="p3" class="product" onclick="handleProductSelect(this.id)">
                 <img src="./images/AirMax95_teal.jpg" class="product-img">
                 <div class="product-description">
                     <div class="product-name">Air Max 95 (Sesame, Teal, Amethyst)</div>
                     <div class="product-type">Nike</div>
                     <div class="product-price">$100</div>
                     <div class="product-review">35 reviews</div>
+                    <div class="product-hidden-desc">Originally created for the hardwood, the Dunk later took to the streets—and as they say, the rest is history. More than 35 years after its debut, the silhouette still delivers bold, defiant style and remains a coveted look for crews across both sport and culture. Now, the university-hoops OG returns, covered in crisp material overlays with heritage-inspired colour-blocking. Modern footwear technology brings the design's comfort into the 21st century, while a clean combination of white and University Blue gives this make-up a classic feel.
+                    </div>
                 </div>
             </div>
             <div id="p4" class="product">

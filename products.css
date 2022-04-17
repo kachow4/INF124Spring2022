@@ -61,6 +61,19 @@ table {
     width: 100%;
 } */
 
+/* GLOBAL CSS */
+.product-img{
+    cursor: pointer;
+}
+
+.additional-product-img {
+    display: none;
+}
+
+.product-hidden-desc {
+    display: none;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .products-container{
@@ -326,9 +339,9 @@ table {
         color: grey;
     }
 
-    .product-hidden-desc {
+    /* .product-hidden-desc {
         display: none;
-    }
+    } */
 }
 
 /* .product {
