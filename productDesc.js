@@ -40,20 +40,27 @@ function formValidation() {
         alert("Invalid. Please enter a street address with the following format: A 1-5 digit number followed by your abbreviated street name.")
     }
     
-
     // CITY
+    let city = document.cartForm.city;
 
     // STATE
+    let state = document.cartForm.state;
 
     //ZIPCODE
+    let zipcode = document.cartForm.zipcode;
 
     //EMAIL
+    let email = document.cartForm.email;
 
     //PHONE NUMBER
+    let phone = document.cartForm.phone-number;
 
     //CARD NUMBER
+    let card = document.cartForm.card-number;
 
     //EXPIRATION DATE
+    let date = document.cartForm.expiration-date;
 
     //SECURITY CODE
+    let code = document.cartForm.security-code;
 }
