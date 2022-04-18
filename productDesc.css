@@ -49,10 +49,13 @@ input[type=submit]:hover {
     background-color: rgb(27, 27, 27);
 }
 
+h3 {
+    width: 100%;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .top-product-description{
-        /* border: 1px solid black; */
         border-top: 1px solid gainsboro;
         padding-top: 40px;
         padding-left: 20px;
@@ -74,10 +77,6 @@ input[type=submit]:hover {
     .form-container{
         padding-left: 5%;
         padding-bottom: 100px;
-    }
-
-    h3{
-        width: 100%;
     }
 
     input[type=text], select {
@@ -111,17 +110,11 @@ input[type=submit]:hover {
     }
 
     .form-container {
-        /* background-color: aquamarine; */
         padding: 10%;
-    }
-
-    h3{
-        width: 100%;
     }
 
     .input-field{
         margin: 10px;
-        /* background-color: blueviolet; */
         width: 45%;
     }
 
@@ -130,12 +123,10 @@ input[type=submit]:hover {
     }
     
     .main-info {
-        /* background-color: red; */
         display: flex;
     }
 
     .shipping-info {
-        /* background-color: green; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -146,7 +137,6 @@ input[type=submit]:hover {
     } 
 
     .payment-info {
-        /* background-color: blue; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -181,17 +171,11 @@ input[type=submit]:hover {
     }
 
     .form-container {
-        /* background-color: aquamarine; */
         padding: 10%;
-    }
-
-    h3{
-        width: 100%;
     }
 
     .input-field{
         margin: 10px;
-        /* background-color: blueviolet; */
         width: 45%;
     }
 
@@ -200,12 +184,10 @@ input[type=submit]:hover {
     }
     
     .main-info {
-        /* background-color: red; */
         display: flex;
     }
 
     .shipping-info {
-        /* background-color: green; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -216,7 +198,6 @@ input[type=submit]:hover {
     } 
 
     .payment-info {
-        /* background-color: blue; */
         display: flex;
         flex-wrap: wrap;
     }
@@ -254,7 +235,6 @@ input[type=submit]:hover {
     }
 
     .form-container {
-        /* background-color: blue; */
         padding: 10%;
     }
 
@@ -265,11 +245,6 @@ input[type=submit]:hover {
 
     .form-column{
         margin: 5px;
-    }
-
-    h3 {
-        width: 100%;
-        /* background-color: red; */
     }
 
     .input-field{
@@ -340,7 +315,6 @@ input[type=submit]:hover {
     }
 
     .form-container {
-        /* background-color: blue; */
         padding: 10%;
     }
 
@@ -351,11 +325,6 @@ input[type=submit]:hover {
 
     .form-column{
         margin: 5px;
-    }
-
-    h3 {
-        width: 100%;
-        /* background-color: red; */
     }
 
     .input-field{

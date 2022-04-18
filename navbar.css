@@ -2,6 +2,17 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.nav-bar .tab:hover {
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+.nav-bar .tab a{
+    text-decoration: none;
+    color: black;
+}  
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .nav-bar-container {
@@ -34,7 +45,7 @@ body {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .nav-bar-container {
-        width: 100%;
+        width: 90%;
         padding-left: 10%;
         padding-top: 40px;
         display: flex;
@@ -61,10 +72,15 @@ body {
         margin-top: 10px;
     }
 } 
+@media only screen and (min-width: 768px) {
+    .nav-bar-container{
+        width: 90%;
+    }
+} 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .nav-bar-container {
-        width: 100%;
+        width: 90%;
         padding-left: 10%;
         padding-top: 40px;
         display: flex;
@@ -94,7 +110,7 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .nav-bar-container {
-        width: 100%;
+        width: 90%;
         padding-left: 10%;
         padding-top: 40px;
         display: flex;
@@ -120,15 +136,4 @@ body {
         margin-left: 5px;
         margin-top: 10px;
     }
-}
-
-.nav-bar .tab:hover {
-    font-weight: bold;
-    cursor: pointer;
-    transition-duration: .25s;
-}
-
-.nav-bar .tab a{
-    text-decoration: none;
-    color: black;
-}    
+}  
