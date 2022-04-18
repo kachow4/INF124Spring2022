@@ -47,6 +47,9 @@
                 <div class="description"></div>
             </div>
 
+            <div id="reviews"></div>
+            <div id="description"></div>
+
         </div>
 
         <!-- product form -->
@@ -54,7 +57,7 @@
             <form action="mailto:" method="POST" enctype="text/plain" id="cart-form" name="cartForm" onsubmit="formValidation()">
                 <h3>Your Cart</h3>
                 
-                <label for="product-identifier">Product Name</label>
+                <label for="product-identifier">Product Name</label><br>
                 <select id="product-identifier" name="product-identifier" required>
                     <option>Dunk Low</option>
                     <option>Air Force 1</option>
@@ -65,9 +68,9 @@
                     <option>MS327LF1</option>
                     <option>ML574RO2</option>
                     <option>Run Star Hike</option>
-                </select>
+                </select><br>
 
-                <label for="quantity">Quantity</label>
+                <label for="quantity">Quantity</label><br>
                 <select id="quantity" name="quantity" required>
                     <option>1</option>
                     <option>2</option>
@@ -79,69 +82,67 @@
                     <option>8</option>
                     <option>9</option>
                     <option>10</option>
-                </select>
+                </select><br>
 
                 <h3>Shipping Information</h3>
                 <div class="shipping-info">
-                    <label for="first-name">First Name</label>
-                    <input id="first-name" name="firstName" type="text"/>
+                    <label for="first-name">First Name</label><br>
+                    <input id="first-name" name="firstName" type="text"/><br>
                     
-                    <label for="last-name">Last Name</label>
-                    <input id="last-name" name="lastName" type="text"/>
+                    <label for="last-name">Last Name</label><br>
+                    <input id="last-name" name="lastName" type="text"/><br>
                     
                     <h4>Shipping Address</h4>
                     <div class="shipping-address">
-                        <label for="street-address">Street Address</label>
-                        <input id="street-address" name="streetAddress" type="text"/>
+                        <label for="street-address">Street Address</label><br>
+                        <input id="street-address" name="streetAddress" type="text"/><br>
                         
-                        <label for="city">City</label>
-                        <input id="city" name="city" type="text"/>
+                        <label for="city">City</label><br>
+                        <input id="city" name="city" type="text"/><br>
                         
-                        <label for="state">State</label>
-                        <input id="state" name="state" type="text"/>
+                        <label for="state">State</label><br>
+                        <input id="state" name="state" type="text"/><br>
                         
-                        <label for="zipcode">Zipcode</label>
-                        <input id="zipcode" name="zipcode" type="text"/>
+                        <label for="zipcode">Zipcode</label><br>
+                        <input id="zipcode" name="zipcode" type="text"/><br>
                     </div>
 
-                    <label for="shipping-speed">Shipping Speed</label>
+                    <label for="shipping-speed">Shipping Speed</label><br>
                     <select id="shipping-speed" name="shipping-speed">
                         <option>Overnight</option>
                         <option>2-days Expedited</option>
                         <option>6-days Ground</option>
-                    </select>
+                    </select><br>
 
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="text"/>
+                    <label for="email">Email</label><br>
+                    <input id="email" name="email" type="text"/><br>
                     
-                    <label for="phone-number">Phone Number</label>
-                    <input id="phone-number" name="phone-number" type="text"/>
+                    <label for="phone-number">Phone Number</label><br>
+                    <input id="phone-number" name="phone-number" type="text"/><br>
                 </div>
 
                 <h3>Payment Information</h3>
                 <div class="credit-card-info">
                     <input type="radio" id="credit" name="payment-method" value="Credit">
-                    <label for="credit">Credit</label>
+                    <label for="credit">Credit</label><br>
                     
                     <input type="radio" id="debit" name="payment-method" value="Debit">
                     <label for="debit">Debit</label>
 
-                    <label for="card-number">Card Number</label>
-                    <input id="card-number" name="card-number" type="text"/>
+                    <label for="card-number">Card Number</label><br>
+                    <input id="card-number" name="card-number" type="text"/><br>
 
-                    <label for="expiration-date">Expiration Date</label>
-                    <input id="expiration-date" name="expiration-date" type="text"/>
+                    <label for="expiration-date">Expiration Date</label><br>
+                    <input id="expiration-date" name="expiration-date" type="text"/><br>
 
-                    <label for="security-code">Security Code</label>
-                    <input id="security-code" name="security-code" type="text"/>
+                    <label for="security-code">Security Code</label><br>
+                    <input id="security-code" name="security-code" type="text"/><br>
                 </div>
 
                 <input type="submit" value="Submit My Order"></button>
             </form>
         </div>
 
-        <div id="reviews"></div>
-        <div id="description"></div>
     </div>
 
     <script type="text/javaScript">
