@@ -14,7 +14,7 @@
     <header>
         <div class="nav-bar-container">
             <ul class="nav-bar">
-                <li id="navbar-title" class="nav-bar-title">Item Select</li>
+                <li id="navbar-title" class="nav-bar-title">Product Page</li>
                 <li class="tab"><a href="./index.html">Home</a></li>
                 <li class="tab"><a href="./products.html">Products</a></li>
                 <li class="tab"><a href="./team.html">The Team</a></li>
@@ -55,90 +55,117 @@
         <!-- product form -->
         <div class="form-container">
             <form action="mailto:" method="POST" enctype="text/plain" id="cart-form" name="cartForm" onsubmit="formValidation()">
-                <h3>Your Cart</h3>
+                <!-- <h2>My Cart</h2> -->
                 
-                <label for="product-identifier">Product Name</label><br>
-                <select id="product-identifier" name="product-identifier" required>
-                    <option>Dunk Low</option>
-                    <option>Air Force 1</option>
-                    <option>Air Max 95</option>
-                    <option>One Star</option>
-                    <option>JEREMY SCOTT FORUM WINGS 1.0 MONEY</option>
-                    <option>Forum Mid</option>
-                    <option>MS327LF1</option>
-                    <option>ML574RO2</option>
-                    <option>Run Star Hike</option>
-                </select><br>
+                <div class="form-row">
+                    <div class="form-column main-info">
+                        <div class="input-field">
+                            <label for="product-identifier">Product Name</label><br>
+                            <select id="product-identifier" name="product-identifier" required>
+                                <option>Dunk Low</option>
+                                <option>Air Force 1</option>
+                                <option>Air Max 95</option>
+                                <option>One Star</option>
+                                <option>JEREMY SCOTT FORUM WINGS 1.0 MONEY</option>
+                                <option>Forum Mid</option>
+                                <option>MS327LF1</option>
+                                <option>ML574RO2</option>
+                                <option>Run Star Hike</option>
+                            </select>
+                        </div>
 
-                <label for="quantity">Quantity</label><br>
-                <select id="quantity" name="quantity" required>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                </select><br>
-
-                <h3>Shipping Information</h3>
-                <div class="shipping-info">
-                    <label for="first-name">First Name</label><br>
-                    <input id="first-name" name="firstName" type="text"/><br>
-                    
-                    <label for="last-name">Last Name</label><br>
-                    <input id="last-name" name="lastName" type="text"/><br>
-                    
-                    <h4>Shipping Address</h4>
-                    <div class="shipping-address">
-                        <label for="street-address">Street Address</label><br>
-                        <input id="street-address" name="streetAddress" type="text"/><br>
-                        
-                        <label for="city">City</label><br>
-                        <input id="city" name="city" type="text"/><br>
-                        
-                        <label for="state">State</label><br>
-                        <input id="state" name="state" type="text"/><br>
-                        
-                        <label for="zipcode">Zipcode</label><br>
-                        <input id="zipcode" name="zipcode" type="text"/><br>
+                        <div class="input-field">
+                            <label for="quantity">Quantity</label><br>
+                            <select id="quantity" name="quantity" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </div>
                     </div>
 
-                    <label for="shipping-speed">Shipping Speed</label><br>
-                    <select id="shipping-speed" name="shipping-speed">
-                        <option>Overnight</option>
-                        <option>2-days Expedited</option>
-                        <option>6-days Ground</option>
-                    </select><br>
+                    <!-- <h3>Shipping Information</h3> -->
+                    <div class="form-column shipping-info">
+                        <div class="input-field">
+                            <label for="first-name">First Name</label><br>
+                            <input id="first-name" name="firstName" type="text"/>
+                        </div>
 
-                    <label for="email">Email</label><br>
-                    <input id="email" name="email" type="text"/><br>
-                    
-                    <label for="phone-number">Phone Number</label><br>
-                    <input id="phone-number" name="phone_number" type="text"/><br>
+                        <div class="input-field">
+                            <label for="last-name">Last Name</label><br>
+                            <input id="last-name" name="lastName" type="text"/>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="street-address">Street Address</label><br>
+                            <input id="street-address" name="streetAddress" type="text"/><br>
+                        </div>
+                        <div class="input-field">
+                            <label for="city">City</label><br>
+                            <input id="city" name="city" type="text"/><br>
+                        </div>
+                        <div class="input-field">
+                            <label for="state">State</label><br>
+                            <input id="state" name="state" type="text"/><br>
+                        </div>
+                        <div class="input-field">
+                            <label for="zipcode">Zipcode</label><br>
+                            <input id="zipcode" name="zipcode" type="text"/><br>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="shipping-speed">Shipping Speed</label><br>
+                            <select id="shipping-speed" name="shipping-speed">
+                                <option>Overnight</option>
+                                <option>2-days Expedited</option>
+                                <option>6-days Ground</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="email">Email</label><br>
+                            <input id="email" name="email" type="text"/>
+                        </div>
+                        <div class="input-field">
+                            <label for="phone-number">Phone Number</label><br>
+                            <input id="phone-number" name="phone-number" type="text"/>
+                        </div>
+                    </div>
+
+                    <!-- <h3>Payment Information</h3> -->
+                    <div class="form-column payment-info">
+                        <div class="input-field">
+                            <label for="card-type">Card Type</label><br><br>
+                            <div id="card-type" name="card-type">
+                                <input type="radio" id="credit" name="payment-method" value="Credit">
+                                <label for="credit">Credit</label>
+                                
+                                <input type="radio" id="debit" name="payment-method" value="Debit">
+                                <label for="debit">Debit</label>
+                            </div><br>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="card-number">Card Number</label><br>
+                            <input id="card-number" name="card-number" type="text"/><br>
+                        </div>
+                        <div class="input-field">
+                            <label for="expiration-date">Expiration Date</label><br>
+                            <input id="expiration-date" name="expiration-date" type="text"/><br>
+                        </div>
+                        <div class="input-field">
+                            <label for="security-code">Security Code</label><br>
+                            <input id="security-code" name="security-code" type="text"/><br>
+                        </div>
+                    </div>
                 </div>
-
-                <h3>Payment Information</h3>
-                <div class="credit-card-info">
-                    <input type="radio" id="credit" name="payment-method" value="Credit">
-                    <label for="credit">Credit</label><br>
-                    
-                    <input type="radio" id="debit" name="payment-method" value="Debit">
-                    <label for="debit">Debit</label>
-
-                    <label for="card-number">Card Number</label><br>
-                    <input id="card-number" name="card_number" type="text"/><br>
-
-                    <label for="expiration-date">Expiration Date</label><br>
-                    <input id="expiration-date" name="expiration_date" type="text"/><br>
-
-                    <label for="security-code">Security Code</label><br>
-                    <input id="security-code" name="security_code" type="text"/><br>
-                </div>
-
                 <input type="submit" value="Submit My Order"></button>
             </form>
         </div>

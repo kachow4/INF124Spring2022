@@ -27,7 +27,7 @@ body {
 
 
 input[type=text], select {
-    width: 400px;
+    font-size: 16px;
     padding: 12px 20px;
     margin: 8px 0px;
     display: inline-block;
@@ -37,11 +37,17 @@ input[type=text], select {
 
 input[type=submit] {
     width: 200px;
+    margin-top: 50px;
     padding: 12px 20px;
     border: none;
-    color: gray;
-    /* background-color: gray; */
+    color: rgb(24, 24, 24);
+    background-color: lightgray;
     border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: rgb(27, 27, 27);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -66,13 +72,13 @@ input[type=submit] {
         display: none;
     }
 
-    #reviews {
-        border: 1px solid black;
+    .form-container{
+        padding-left: 5%;
+        padding-bottom: 100px;
     }
 
-    .form-container{
-        border: 1px solid black;
-        padding-left: 5%;
+    input[type=text], select {
+        width: 400px;
     }
 } 
 
@@ -101,10 +107,42 @@ input[type=submit] {
         display: none;
     }
 
-    #reviews {
-        border: 1px solid black;
+    .form-container {
+        /* background-color: aquamarine; */
+        padding: 10%;
+    }
+
+    .input-field{
+        margin: 10px;
+        /* background-color: blueviolet; */
+        width: 45%;
+    }
+
+    input[type=text], select {
+        width: 100%;
     }
     
+    .main-info {
+        /* background-color: red; */
+        display: flex;
+    }
+
+    .shipping-info {
+        /* background-color: green; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    .payment-info {
+        /* background-color: blue; */
+        display: flex;
+        flex-wrap: wrap;
+    }
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -133,6 +171,43 @@ input[type=submit] {
         width: 45%;
         height: auto;
         padding: 20px;
+    }
+
+    .form-container {
+        /* background-color: aquamarine; */
+        padding: 10%;
+    }
+
+    .input-field{
+        margin: 10px;
+        /* background-color: blueviolet; */
+        width: 45%;
+    }
+
+    input[type=text], select {
+        width: 100%;
+    }
+    
+    .main-info {
+        /* background-color: red; */
+        display: flex;
+    }
+
+    .shipping-info {
+        /* background-color: green; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    .payment-info {
+        /* background-color: blue; */
+        display: flex;
+        flex-wrap: wrap;
     }
 } 
 
@@ -165,6 +240,48 @@ input[type=submit] {
     .side-product-description{
         width: 20%;
         padding-left: 20px;
+    }
+
+    .form-container {
+        padding: 10%;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .form-column{
+        margin: 5px;
+    }
+
+    .input-field{
+        margin: 10px;
+        width: 90%;
+    }
+
+    input[type=text], select {
+        width: 100%;
+    }
+    
+    .main-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+
+    .payment-info {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
