@@ -55,8 +55,7 @@
         <!-- product form -->
         <div class="form-container">
             <form action="mailto:" method="POST" enctype="text/plain" id="cart-form" name="cartForm" onsubmit="formValidation()">
-                <!-- <h2>My Cart</h2> -->
-                
+                <h2>My Cart</h2>                
                 <div class="form-row">
                     <div class="form-column main-info">
                         <div class="input-field">
@@ -91,8 +90,8 @@
                         </div>
                     </div>
 
-                    <!-- <h3>Shipping Information</h3> -->
                     <div class="form-column shipping-info">
+                        <h3>Shipping Information</h3>
                         <div class="input-field">
                             <label for="first-name">First Name</label><br>
                             <input id="first-name" name="firstName" type="text"/>
@@ -139,8 +138,8 @@
                         </div>
                     </div>
 
-                    <!-- <h3>Payment Information</h3> -->
                     <div class="form-column payment-info">
+                        <h3>Payment Information</h3>
                         <div class="input-field">
                             <label for="card-type">Card Type</label><br><br>
                             <div id="card-type" name="card-type">
@@ -164,9 +163,11 @@
                             <label for="security-code">Security Code</label><br>
                             <input id="security-code" name="security-code" type="text"/><br>
                         </div>
+                        <div class="input-field">
+                            <input type="submit" value="Submit My Order"></button>
+                        </div>
                     </div>
                 </div>
-                <input type="submit" value="Submit My Order"></button>
             </form>
         </div>
 
