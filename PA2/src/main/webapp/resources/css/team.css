@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.website-description {
+    padding: 20px;
+}
+
+.bio-container {
+    width: 100%;
+}
+
+.bio-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.bio-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bio-major {
+    font-size: 20px;
+}
+
+.bio-year {
+    font-size: 18px;
+    color: gray;
+}
+
+.bio-pic:hover {
+    transform: scale(1.1);
+    transition-duration: .2s;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .bio-container {
+        text-align: center;
+    }
+
+    .individual-bio {
+        padding: 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .bio-container {
+        text-align: center;
+    }
+
+    .individual-bio {
+        display: flex;
+        padding: 20px;
+    }
+
+    .bio-description {
+        padding-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bio-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .individual-bio {
+        display: block;
+        width: 40%;
+    }
+
+    .bio-description {
+        padding: 5px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .bio-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .individual-bio {
+        display: block;
+        width: 25%;
+        /* border: 1px solid black; */
+    }
+
+    .bio-pic {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .bio-description {
+        padding: 5px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .bio-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .individual-bio {
+        display: block;
+        width: 25%;
+        /* border: 1px solid black; */
+    }
+
+    .bio-pic {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .bio-description {
+        padding: 5px;
+    }
+}

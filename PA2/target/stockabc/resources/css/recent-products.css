@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GLOBAL CSS */
+.recents-img {
+    cursor: pointer;
+}
+
+.additional-recents-img {
+    display: none;
+}
+
+.recents-hidden-desc {
+    display: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .recents-container {
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .recents {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .recents-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .recents-description {
+        width: 175px;
+        text-align: left;
+
+    }
+
+    .recents-name {
+        font-size: 14px;
+    }
+
+    .recents-type {
+        font-size: 14px;
+        color: grey;
+    }
+
+    .recents-price {
+        font-size: 14px;
+    }
+
+    .recents-review {
+        font-size: 14px;
+        color: grey;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .recents-container {
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .recents {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .recents-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .recents-description {
+        width: 175px;
+        text-align: left;
+
+    }
+
+    .recents-name {
+        font-size: 14px;
+    }
+
+    .recents-type {
+        font-size: 14px;
+        color: grey;
+    }
+
+    .recents-price {
+        font-size: 14px;
+    }
+
+    .recents-review {
+        font-size: 14px;
+        color: grey;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .recents-container {
+        width: 100%;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .recents {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .recents-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .recents-description {
+        width: 175px;
+        text-align: left;
+
+    }
+
+    .recents-name {
+        font-size: 14px;
+    }
+
+    .recents-type {
+        font-size: 14px;
+        color: grey;
+    }
+
+    .recents-price {
+        font-size: 14px;
+    }
+
+    .recents-review {
+        font-size: 14px;
+        color: grey;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .recents-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .recents-img {
+        width: 175px;
+        height: 175px;
+    }
+
+    .recents-description {
+        width: 175px;
+        text-align: left;
+
+    }
+
+    .recents-name {
+        font-size: 14px;
+    }
+
+    .recents-type {
+        font-size: 14px;
+        color: grey;
+    }
+
+    .recents-price {
+        font-size: 14px;
+    }
+
+    .recents-review {
+        font-size: 14px;
+        color: grey;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .recents-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .recents-img {
+        width: 175px;
+        height: 175px;
+        /* padding */
+    }
+
+    .recents-description {
+        width: 175px;
+        text-align: left;
+
+    }
+
+    .recents-name {
+        font-size: 14px;
+    }
+
+    .recents-type {
+        font-size: 14px;
+        color: grey;
+    }
+
+    .recents-price {
+        font-size: 14px;
+    }
+
+    .recents-review {
+        font-size: 14px;
+        color: grey;
+    }
+}

@@ -1,0 +1,385 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* GLOBAL CSS */
+.product-name {
+    font-size: 24px;
+}
+
+.brand {
+    font-size: 18px;
+    color: gray;
+}
+
+.price {
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.description {
+    padding-top: 20px;
+}
+
+input[type=text],
+select {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    width: 200px;
+    margin-top: 50px;
+    padding: 12px 20px;
+    border: none;
+    color: rgb(24, 24, 24);
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+
+h3 {
+    width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .top-product-description {
+        border-top: 1px solid gainsboro;
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    .side-product-description {
+        display: none;
+    }
+
+    #product-img0 {
+        width: 100%;
+        height: auto;
+    }
+
+    #product-img1,
+    #product-img2,
+    #product-img3 {
+        display: none;
+    }
+
+    .form-container {
+        padding-left: 5%;
+        padding-bottom: 100px;
+    }
+
+    input[type=text],
+    select {
+        width: 400px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .page-container {
+        width: 100%;
+    }
+
+    .top-product-description {
+        border-top: 1px solid gainsboro;
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    .side-product-description {
+        display: none;
+    }
+
+    #product-img0 {
+        width: 100%;
+        height: auto;
+    }
+
+    #product-img1,
+    #product-img2,
+    #product-img3 {
+        display: none;
+    }
+
+    .form-container {
+        padding: 10%;
+    }
+
+    .input-field {
+        margin: 10px;
+        width: 45%;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+    }
+
+    .main-info {
+        display: flex;
+    }
+
+    .shipping-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .payment-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .page-container {
+        width: 100%;
+    }
+
+    .top-product-description {
+        border-top: 1px solid gainsboro;
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    .side-product-description {
+        display: none;
+    }
+
+    .product-img-container {
+        width: 90%;
+        display: flexbox;
+        margin-left: 10%;
+    }
+
+    #product-img0,
+    #product-img1,
+    #product-img2,
+    #product-img3 {
+        width: 45%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 10%;
+    }
+
+    .input-field {
+        margin: 10px;
+        width: 45%;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+    }
+
+    .main-info {
+        display: flex;
+    }
+
+    .shipping-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .payment-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .product-container {
+        display: flex;
+    }
+
+    .product-img-container {
+        width: 70%;
+        display: flexbox;
+
+        padding-left: 5%;
+    }
+
+    .product-img-container {
+        border-right: 2px solid rgb(213, 213, 213);
+    }
+
+    #product-img0,
+    #product-img1,
+    #product-img2,
+    #product-img3 {
+        width: 45%;
+        height: auto;
+    }
+
+    .top-product-description {
+        display: none;
+    }
+
+    .side-product-description {
+        width: 20%;
+        padding-left: 20px;
+    }
+
+    .form-container {
+        padding: 10%;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .form-column {
+        margin: 5px;
+    }
+
+    .input-field {
+        margin: 10px;
+        ;
+        width: 90%;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+    }
+
+    .main-info {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+    }
+
+    .shipping-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .payment-info {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    input[type=submit] {
+        margin-top: 25px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .product-container {
+        display: flex;
+    }
+
+    .product-img-container {
+        width: 70%;
+        display: flexbox;
+
+        padding-left: 5%;
+    }
+
+    .product-img-container {
+        border-right: 2px solid rgb(213, 213, 213);
+    }
+
+    #product-img0,
+    #product-img1,
+    #product-img2,
+    #product-img3 {
+        width: 45%;
+        height: auto;
+    }
+
+    .top-product-description {
+        display: none;
+    }
+
+    .side-product-description {
+        width: 20%;
+        padding-left: 20px;
+    }
+
+    .form-container {
+        padding: 10%;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .form-column {
+        margin: 5px;
+    }
+
+    .input-field {
+        margin: 10px;
+        ;
+        width: 90%;
+    }
+
+    input[type=text],
+    select {
+        width: 100%;
+    }
+
+    .main-info {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100px;
+    }
+
+    .shipping-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .shipping-address {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .payment-info {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    input[type=submit] {
+        margin-top: 25px;
+    }
+}
