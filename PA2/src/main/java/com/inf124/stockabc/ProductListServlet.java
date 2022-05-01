@@ -84,6 +84,7 @@ public class ProductListServlet extends HttpServlet {
         writer.println("<li class='tab'><a href='./index.jsp'>Home</a></li>");
         writer.println("<li class='tab'><a href=''>Products</a></li>");
         writer.println("<li class='tab'><a href='./team'>The Team</a></li>");
+        writer.println("<li class='tab'><a href='./checkout'>Cart</a></li>");
         writer.println("</ul>");
         writer.println("</div>");
         writer.println("</header>");

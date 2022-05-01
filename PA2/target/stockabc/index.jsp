@@ -18,7 +18,7 @@
                 <li class="tab"><a href="index.jsp">Home</a></li>
                 <li class="tab"><a href="./product-list">Products</a></li>
                 <li class="tab"><a href="./team">The Team</a></li>
-                <li class="tab"><a href="./checkout.jsp">Cart</a></li>
+                <li class="tab"><a href="./checkout">Cart</a></li>
             </ul>
         </div>
     </header>

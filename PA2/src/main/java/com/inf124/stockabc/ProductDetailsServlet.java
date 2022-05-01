@@ -80,6 +80,7 @@ public class ProductDetailsServlet extends HttpServlet {
                 "                <li class='tab'><a href='./index.jsp'>Home</a></li>" +
                 "                <li class='tab'><a href='./product-list'>Products</a></li>" +
                 "                <li class='tab'><a href='./team'>The Team</a></li>" +
+                "               <li class='tab'><a href='./checkout'>Cart</a></li>" +
                 "            </ul>" +
                 "        </div>" +
                 "    </header>");
@@ -122,8 +123,8 @@ public class ProductDetailsServlet extends HttpServlet {
                         "                <div class='price'>" + product_price + "</div>" +
                         "                        <div class='reviews'></div>" +
 
-                        "               <form action='./add-to-cart?id=" + productId + "' method='POST'>" +
-                        "                    <input type='submit' value='Add to Cart'></button>" +
+                        "               <form action='./add-to-cart?id=" + product_id + "' method='POST'>" +
+                        "                    <input type='submit' value='Add to Cart'>" +
                         "                        </form>" +
 
                         "               <div class='description'>" + product_description + "</div>" +
