@@ -1,0 +1,10 @@
+com\inf124\stockabc\OrderDetailsServlet.class
+com\inf124\stockabc\ProductListServlet.class
+com\inf124\stockabc\ProductClass.class
+com\inf124\stockabc\RecentProductsServlet.class
+com\inf124\stockabc\SubmitOrderServlet.class
+com\inf124\stockabc\TeamServlet.class
+com\inf124\stockabc\ProductDetailsServlet.class
+com\inf124\stockabc\DatabaseHelper.class
+com\inf124\stockabc\AddToCartServlet.class
+com\inf124\stockabc\CheckoutServlet.class
