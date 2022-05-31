@@ -38,12 +38,15 @@ exports.create = (req, res) => {
 // Retrieve all Products from the database.
 exports.findAll = (req, res) => {
   const name = req.query.name;
+//   const brand = req.query.brand;
+//   const price = req.query.price;
+
   var name_condition = name ? { name: { [Op.like]: `%${name}%` } } : null;
-  var brand_condition = brand ? { brand: { [Op.like]: `%${brand}%` } } : null;
-  var price_condition = price ? { price: { [Op.like]: `%${price}%` } } : null;
+//   var brand_condition = brand ? { brand: { [Op.like]: `%${brand}%` } } : null;
+//   var price_condition = price ? { price: { [Op.like]: `%${price}%` } } : null;
 
   // where condition
-  Product.findAll({ where: name_condition || brand_condition || price_condition })
+  Product.findAll({ where: name_condition})
     //send data to the frontend
     .then(data => {
       res.send(data);
