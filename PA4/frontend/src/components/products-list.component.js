@@ -82,18 +82,56 @@ export default class ProductsList extends Component {
       currentIndex: -1
     });
 
-    // links to product.service.js
+    let tempName;
+    let tempBrand;
+
+    // links to product.service.js --> searches by name first, checks for if the return is NULL
     ProductDataService.findByName(this.state.searchName)
     //products variable is filled with the response data from the backend/database
       .then(response => {
-        this.setState({
-          products: response.data
-        });
-        console.log(response.data);
+        //this.setState({
+          //products: response.data
+        //});
+        // try setting the state later
+        tempName = response.data;
+        console.log("Product Service Return Name search: ", response.data);
       })
       .catch(e => {
         console.log(e);
       });
+
+    if (tempName === null) {
+      ProductDataService.findByBrand(this.state.searchName)
+        .then(response => {
+          tempBrand = response.data;
+          console.log("Product Service Return Brand search: ", response.data);
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    }
+    else {
+      this.setState({
+        products: tempName
+      });
+    }
+
+    if (tempName === null && tempBrand === null) {
+      ProductDataService.findByPrice(this.state.searchName)
+        .then(response => {
+          this.setState({
+            products: response.data
+          })
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    }
+    else if (tempName === null && tempBrand !== null) {
+      this.setState({
+        products: tempBrand
+      });
+    }
   }
 
 //   render/execute the components to show on screen

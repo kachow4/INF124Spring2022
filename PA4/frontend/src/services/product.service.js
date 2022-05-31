@@ -30,6 +30,14 @@ class ProductDataService {
   findByName(name) {
     return http.get(`/products?name=${name}`);
   }
+
+  findByBrand(brand) {
+    return http.get(`/products?brand=${brand}`);
+  }
+
+  findByPrice(price) {
+    return http.get(`/products?price=${price}`);
+  }
 }
 
 export default new ProductDataService();
